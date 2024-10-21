@@ -1,0 +1,37 @@
+footer{
+    background-color: $blue;
+    width: 100%;
+    border-radius: 0px 0px 24px 24px;
+    .footer__container{
+        margin: 24px auto;
+        max-width: 1280px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            color: white;
+            font-weight: 200;
+            p{
+                &:not(:nth-child(1)){
+                    font-size: 16px;
+                }
+            }
+        }
+        .right{
+            a{
+                display: flex;
+                color: #fff;
+                gap: 8px;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            font-size: 16px;
+            img{
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.coolPrice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    .coolPrice__container{
+        max-width: 1280px;
+        display: flex;
+        gap: 24px;
+        .right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                font-size: 56px;
+                line-height: 70px;
+                margin-bottom: 30px;
+            }
+            form{
+                display: flex;
+                align-items: center;
+                position: relative;
+                max-width: 465px;
+                input{
+                    width: 100%;
+                    background-color: #f2f2f2;
+                    border-radius: 16px;
+                    padding: 20px 16px;
+                    border: none;
+                    font-family: $visueltPro;
+                    font-size: 18px;
+                    color: $main-grey;
+                }
+                button{
+                    position: absolute;
+                    right: 0;
+                    margin-right: 8px;
+                }
+            }
+            p{
+                color: #595959;
+                max-width: 350px;
+                margin-top: 16px;
+                span{
+                    color: $hover-blue;
+                }
+            }
+        }
+    }
+}

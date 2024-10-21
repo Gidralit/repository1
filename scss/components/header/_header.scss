@@ -1,0 +1,55 @@
+header{
+    background-color: $main-white;
+    display: flex;
+    padding: 26px 56px;
+    border-radius: 24px 24px 0 0;
+    width: 100%;
+    justify-content: space-between;
+    .header-left{
+        .headline{
+            color: $blue;
+        }
+    }
+    .header-right{
+        display: flex;
+        justify-content: space-between;
+        gap: 6rem;
+        nav{
+            margin: 0 auto;
+            ul{
+                display: flex;
+                list-style-type: none;
+                color: $main-grey;
+                gap: 24px;
+                li{
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .headers-buttons{
+            display: flex;
+            gap: 16px;
+            .lang{
+                span:not(span:first-child){
+                    cursor: pointer;
+                    color: $main-grey;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .signin-up{
+                a{
+                    color: $main-white;
+                    padding: 12px 24px;
+                    background-color: $blue;
+                    border-radius: 16px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
