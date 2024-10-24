@@ -1,0 +1,73 @@
+.highLVL{
+    display: flex;
+    background-image: radial-gradient(at 0% 100%, rgba(71, 85, 235, 0.448) 0%, transparent 50%),
+                    radial-gradient(at 0% 100%, rgba($color: $purple, $alpha: 0.3) 0%, transparent 20%);
+    background-color: white;
+    padding: 0px 56px;
+    justify-content: space-between;
+    &-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 50%;
+        gap: 40px;
+        margin-top: 40px;
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+            form{
+                display: flex;
+                position: relative;
+                width: 72%;
+                align-items: center;
+                input{
+                    width: 100%;
+                    padding: 20px;
+                    background-color: rgba($color: #fff, $alpha: 0.5);
+                    border: none;
+                    border-radius: 16px;
+                    font-size: 18px;
+                }
+                button{
+                    position: absolute;
+                    right: 10px;
+                }
+            }
+            p{
+                font-weight: 400;
+                font-size: 12px;
+                width: 50%;
+                line-height: 16px;
+                color: #595959;
+                margin-left: 8px;
+                span{
+                    color: $hover-blue;
+                }
+            }
+        }
+        .mouse{
+            margin-top: 86px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #fff;
+            line-height: 21px;
+            p{
+                margin-top: 2px;
+            }
+        }
+    }
+    &-right{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 100%;
+        }
+    }
+}

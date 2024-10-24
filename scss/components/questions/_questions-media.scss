@@ -1,0 +1,34 @@
+@media (max-width: 617px){
+    .questions{
+        &__container{
+            padding: 40px 8px;
+            h2{
+                font-size: 18px;
+                line-height: 18px;
+            }
+            &-list{
+                margin-top: 40px;
+                .question{
+                    &__header{
+                        padding: 24px 0;
+                        h2{
+                            font-size: 26px;
+                            margin-left: 16px;
+                        }
+                        .button{
+                            padding: 0;
+                            img{
+                                width: 33px;
+                                height: 33px;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+    }
+}

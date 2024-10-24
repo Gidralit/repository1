@@ -1,0 +1,77 @@
+.reviews{
+    background-color: rgba($color: #fafafa, $alpha: 1.0);
+    background-image: radial-gradient(circle at 100% -30%, rgba($color: $purple, $alpha: 0.3) 0%, transparent 40%),
+                    radial-gradient(circle at 110% -50%, rgba($color: #eb478b, $alpha: 0.5) 0%, transparent 35%),
+                    radial-gradient(circle at 85% 115%, rgba($color: $blue, $alpha: 0.3) 0%, transparent 25%),
+                    radial-gradient(circle at 85% 115%, rgba($color: $purple, $alpha: 0.4) 0%, transparent 20%);
+    display: flex;
+    padding: 0px 56px 80px 56px;
+    flex-direction: column;
+    h2{
+        margin-bottom: 40px;
+        margin-top: 80px;
+    }
+    &__container{
+        width: 100%;
+        min-height: calc(294px * 2 + 20px);
+        position: relative;
+        .cat{
+            position: absolute;
+            border-radius: 16px;
+            background-color: rgba($color: #fff, $alpha: 1);
+            box-shadow: -2px 4px 20px 0 rgba($color: #191919, $alpha: 0.025);
+            &__header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 16px;
+                .cat-name{
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                }
+                p{
+                    color: $main-grey;
+                    margin-right: 10px;
+                }
+                img{
+                    border-radius: 50%;
+                }
+            }
+            &__text{
+                max-width: 600px;
+                padding: 16px 24px;
+                color: $main-grey;
+            }
+            &__stars{
+                padding: 0px 0px 16px 24px;
+            }
+        }
+        .serega{
+            bottom: 0px;
+            left: calc(220px - 20px);
+            z-index: 10;
+        }
+        .kesha{
+            right: 0px;
+            bottom: 160px;
+            z-index: 11;
+        }
+        .oleg{
+            left: 56px;
+            bottom: 264px;
+        }
+        .semen{
+            right: 382px;
+            bottom: 359px;
+            z-index: 12;
+        }
+        button{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 18px;
+        }
+
+    }
+}

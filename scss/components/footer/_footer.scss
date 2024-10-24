@@ -1,0 +1,38 @@
+.footer{
+    background-color: $blue;
+    width: 100%;
+    border-radius: 0px 0px 24px 24px;
+    padding: 24px 56px;
+    display: flex;
+    &__container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            color: white;
+            font-weight: 200;
+            p{
+                &:not(:nth-child(1)){
+                    font-size: 16px;
+                }
+            }
+        }
+        .right{
+            a{
+                display: flex;
+                color: #fff;
+                gap: 8px;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            font-size: 16px;
+            img{
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}

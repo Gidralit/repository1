@@ -1,0 +1,43 @@
+@media (max-width: 1105px){
+    .cool-price{
+        &__container{
+            flex-direction: column;
+            .left{
+                img{
+                    width: 100%;
+                }
+            }
+            .right{
+                p{
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 617px){
+    .cool-price{
+        &__container{
+            padding: 0 20px;
+            .right{
+                h2{
+                    font-size: 36px;
+                    line-height: 45px;
+                }
+                form{
+                    input{
+                        font-size: 14px;
+                    }
+                    button{
+                        font-size: 14px;
+                    }
+                }
+                p{
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
