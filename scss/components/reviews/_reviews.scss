@@ -11,7 +11,7 @@
         margin-bottom: 40px;
         margin-top: 80px;
     }
-    .reviews-container{
+    &__container{
         width: 100%;
         min-height: calc(294px * 2 + 20px);
         position: relative;
@@ -20,7 +20,7 @@
             border-radius: 16px;
             background-color: rgba($color: #fff, $alpha: 1);
             box-shadow: -2px 4px 20px 0 rgba($color: #191919, $alpha: 0.025);
-            .cat__header{
+            &__header{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -38,12 +38,12 @@
                     border-radius: 50%;
                 }
             }
-            .cat__text{
+            &__text{
                 max-width: 600px;
                 padding: 16px 24px;
                 color: $main-grey;
             }
-            .cat__stars{
+            &__stars{
                 padding: 0px 0px 16px 24px;
             }
         }
@@ -70,8 +70,6 @@
             position: absolute;
             right: 0;
             bottom: 0;
-            color: $blue;
-            background-color: #fff;
             font-size: 18px;
         }
 

@@ -1,17 +1,18 @@
 .questions{
+    display: flex;
+    justify-content: center;
     background-color: rgba($color: #fff, $alpha: 0.65);
     background-image: radial-gradient(circle at 100% -30%, rgba($color: $purple, $alpha: 0.3) 0%, transparent 40%),
                     radial-gradient(circle at 110% -50%, rgba($color: #eb478b, $alpha: 0.5) 0%, transparent 35%),
                     radial-gradient(circle at 0% 115%, rgba($color: $blue, $alpha: 0.3) 0%, transparent 40%),
                     radial-gradient(circle at 0% 115%, rgba($color: $purple, $alpha: 0.4) 0%, transparent 20%);
-    .questions__container{
-        margin: 0 auto;
+    &__container{
         max-width: 1350px;
-        padding: 80px 5px;
+        padding: 80px 25px;
         h2{
             margin-left: 30px;
         }
-        .questions__container-list{
+        &-list{
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -20,7 +21,7 @@
             .question{
                 border: 1px solid #fff;
                 border-radius: 16px;
-                .question__header{
+                &__header{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -30,6 +31,12 @@
                     }
                     .button{
                         margin-right: 12px;
+                        cursor: pointer;
+                        img{
+                            &:hover{
+                                filter: drop-shadow(0 1px 3px black);
+                            }
+                        }
                     }
                 }
                 p{

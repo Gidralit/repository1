@@ -1,0 +1,51 @@
+@media (max-width: 1130px){
+    .callback{
+        &__container{
+            .left{
+                width: 100%;
+                p{
+                    max-width: 70%;
+                }
+            }
+            .right{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 617px){
+    .callback{
+        padding: 40px 20px;
+        &__container{
+            .left{
+                h2{
+                    font-size: 26px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 19px;
+                    max-width: none;
+                }
+                form{
+                    input, textarea{
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                }
+                .answer{
+                    display: flex;
+                    flex-direction: column;
+                    button{
+                        font-size: 14px;
+                        max-width: 170px;
+                    }
+                    p{
+
+                        max-width: none;
+                    }
+                }
+            }
+        }
+    }
+}

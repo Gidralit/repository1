@@ -1,0 +1,48 @@
+@media (max-width: 1105px){
+    .highLVL{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        &-left{
+            width: 100%;
+            .mouse{
+                display: none;
+            }
+        }
+        &-right{
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 617px){
+    .highLVL{
+        padding: 0 20px;
+        height: auto;
+        &-left{
+            h1{
+                font-size: 36px;
+                line-height: 45px;
+                font-weight: 500;
+                height: auto;
+            }
+            .form-container{
+                .span{
+                    width: 100%;
+                    margin: 0;
+                    max-width: 305px;
+                }
+                form{
+                    width: 100%;
+                    input{
+                        font-size: 14px;
+                        padding: 18px 16px;
+                    }
+                    button.button.button--white{
+                        font-size: 14px;
+                        padding: 10px 24px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@media (max-width: 850px){
+    .advantages{
+        .advantages__container{
+            grid-template-columns: 1fr;
+            height: auto;
+            article{
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 450px){
+    .advantages{
+        h2{
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 30px;
+        }
+        .advantages__container{
+            article{
+                .title{
+                    img{
+                        width: 36px;
+                        height: 36px;
+                    }
+                    h3{
+                        font-size: 18px;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+}
