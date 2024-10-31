@@ -1,0 +1,21 @@
+@media (max-width: 617px){
+    .footer{
+        &__container{
+            .left{
+                &__container{
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .right{
+                a{
+                    align-items: center;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

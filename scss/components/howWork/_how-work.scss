@@ -1,0 +1,56 @@
+.how-work{   
+    background-image: radial-gradient(circle at 15% 68%, rgba($color: $pink, $alpha: 0.5)  5%, transparent 35%),
+                        radial-gradient( at 80% 10%, rgba($color: $blue, $alpha: 0.4)  5%, transparent 50%),
+                        radial-gradient( at 90% 5%, rgba($color: $purple, $alpha: 0.5)  0%, transparent 20%);
+    &-container{
+        background-color: rgba($color: #fff, $alpha: 0.5);
+        h2:first-child{
+            padding-top: 80px;
+            margin-bottom: 40px;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+        &-content{
+            display: flex;
+            margin-left: 60px;
+            margin-right: 60px;
+            &-left{
+                margin-right: 25px;
+            }
+            &-right{
+                max-width: 480px;
+                .top{
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    margin-bottom: 30px;
+                    .span{
+                        color: $blue;
+                    }
+                    .body{
+                        color: $main-white;
+                    }
+                }
+                h2{
+                    margin-bottom: 30px;
+                }
+                .headline{
+                    margin-bottom: 16px;
+                }
+                .text{
+                    color: $main-grey;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    max-width: 435px;
+                    .body{
+                        font-size: 16px;
+                    }
+                }
+                button{
+                    margin-top: 70px;
+                }
+            }
+        }
+    }
+}
